@@ -1,0 +1,657 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-square70x70logo" content="http://www.mytitlesourceconnection.com:80/smalltile.png" />
+<meta name="msapplication-square150x150logo" content="http://www.mytitlesourceconnection.com:80/mediumtile.png" />
+<meta name="msapplication-wide310x150logo" content="http://www.mytitlesourceconnection.com:80/widetile.png" />
+<meta name="msapplication-square310x310logo" content="http://www.mytitlesourceconnection.com:80/largetile.png" />
+
+<title>New Orders</title>
+
+<link href="/Content/mainsitebundle?v=zI6pqqXjaTwsYcLMAO2RzB5T_65YEHw3RI10JA7Lj3o1" rel="stylesheet"/>
+
+        
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-768683-7', 'auto');
+    ga('send', 'pageview');
+</script>
+
+<link rel="icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    </head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top navbar-titlesource fluid-container nopadding">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand titlesourcelogo hidden-sm hidden-md hidden-lg" href="/Vendor/Appraiser"> </a>
+        </div>
+
+        <div class="container">
+            
+
+
+<a class="navbar-brand titlesourcelogo hidden-xs" href="/Vendor/Appraiser"> </a>
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            <!-- TODO: Portal - this should take us to a password reset screen -->
+<a href="/Vendor/Profile/Summary" title="Manage">Hello Dax Gurr!</a>        </li>
+        <li>
+<form action="/Account/LogOff" class="navbar-right" id="logoutForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="zBg3DHXelFD0Ic1rijzHGy0uz_Ew2WW_QmX0TVfSPxKWc_DdqKOS7Zl5gm3wmhEqHJocSVyGqtr9DrLQqMCrUq44WCuLSQwqgWmDD5gF7VXyfAZq4mSmDyjSSoX4XMjDSMdBLw2" /></form>            <a href="javascript:document.getElementById('logoutForm').submit()" class="navbar-login" data-automationid="LogOff">Log off</a>
+        </li>
+    </ul>
+
+    
+
+            
+
+        </div>
+
+        
+
+
+    <div class="navbar-collapse collapse">
+    <div data-automationid="mainNavigationBar" class="navbar-inner col-sm-12 navbar-topmenu"><div class="navbar-topmenu container"><ul id="topMenu" class="nav navbar-nav">
+                
+                <li><a href="/Vendor/Appraiser" id="Dashboard">Dashboard</a></li>
+                
+                <li class="divider-vertical"></li>
+                
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" id="Queues">Queues <b class="caret"></b></a>    <ul class="dropdown-menu" id ="Queues">
+                
+                <li><a href="/Vendor/AppraiserQueue/NewOrders" id="NewOrders">New Orders</a></li>
+                
+                <li><a href="/Vendor/AppraiserQueue/InProgress" id="InProgress">In Progress</a></li>
+                
+                <li><a href="/Vendor/AppraiserQueue/ReportNotAcceptable" id="ReportNotAcceptable">Report Not Acceptable</a></li>
+                
+                <li><a href="/Vendor/AppraiserQueue/CancelPending" id="CancelPending">Cancel Pending</a></li>
+                
+                <li><a href="/Vendor/AppraiserQueue/Completed" id="Completed">Completed</a></li>
+    </ul>
+</li>
+                
+                <li class="divider-vertical"></li>
+                
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" id="Profile">Profile <b class="caret"></b></a>    <ul class="dropdown-menu" id ="Profile">
+                
+                <li><a href="/Vendor/Profile/Summary" id="Summary">Summary</a></li>
+                
+                <li><a href="/Vendor/Profile/Availability" id="Availability">Availability</a></li>
+                
+                <li><a href="/Vendor/Profile/Documents" id="Documents">Documents</a></li>
+                
+                <li><a href="/Vendor/Profile/ServiceAreas" id="ServiceAreas">Service Areas</a></li>
+                
+                <li><a href="/Vendor/Profile/Performance" id="Performance">Performance</a></li>
+                
+                <li><a href="/Account/ChangePassword" id="ChangePassword">Change Password</a></li>
+    </ul>
+</li>
+                
+                <li class="divider-vertical"></li>
+                
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/Vendor/Help" id="Help">Help <b class="caret"></b></a>    <ul class="dropdown-menu" id ="Help">
+                
+                <li><a href="/Vendor/Help/TrainingVideoForLogin" id="TrainingVideos-LoggingIn">Training Videos - Logging In</a></li>
+                
+                <li><a href="/Vendor/Help/TrainingVideoForDashboard" id="TrainingVideos-TheDashboard(HomeScreen)">Training Videos - The Dashboard (Home Screen)</a></li>
+                
+                <li><a href="/Vendor/Help/TrainingVideoForFeatures" id="TrainingVideos-Features">Training Videos - Features</a></li>
+                
+                <li><a href="/Vendor/Help/UserGuide" id="UserGuide">User Guide</a></li>
+    </ul>
+</li>
+            </ul></div></div></div>
+
+
+    </div>
+
+    <div data-automationid="commonBodyContainer" class="container body-content grey-container">
+        
+
+
+
+        
+
+
+<div class="container noleftpadding nopadding-xs">
+    <div data-automationid="queueMenu" class="col-md-3 col-lg-3 nopadding-xs">
+        
+<h2>Queues</h2>
+<div class="list-group">
+    <a href="/Vendor/AppraiserQueue/NewOrders" class="active list-group-item" data-automationid="newOrdersQueueLink">
+        New Orders
+        <span class="badge pull-right" data-queue-count="APPRASSIGNMENTS">1</span>
+    </a>
+    <a href="/Vendor/AppraiserQueue/InProgress" class=" list-group-item" data-automationid="inProgressQueueLink">
+        In Progress
+        <span class="badge pull-right" data-queue-count="APPRINPROGRESS">0</span>
+    </a>
+    <a href="/Vendor/AppraiserQueue/ReportNotAcceptable" class=" list-group-item notacceptable" data-automationid="rnaQueueLink">
+        Report Not Acceptable
+        <span class="badge pull-right" data-queue-count="APPRREPORTNOTACC">0</span>
+    </a>
+    <a href="/Vendor/AppraiserQueue/CancelPending" class=" list-group-item" data-automationid="cancelPendingQueueLink">
+        Cancel Pending
+        <span class="badge pull-right" data-queue-count="APPRCANCELPEND">0</span>
+    </a>
+</div>
+
+<div class="list-group">
+    <a class="list-group-item" href="mailto:MACSupport@tsiappraisal.com?subject=MAC Portal feedback from user 'daxgurr@gmail.com'&body=Username: daxgurr@gmail.com%0D%0A%0D%0AI would like to submit the following feedback/question/concern regarding the MAC Portal:%0D%0A">Submit Feedback</a>
+</div>
+
+        <div class="nopadding-xs">
+            <ul class="list-group">
+                <li class="list-group-item panel-timer">< 1 hour until expires<i title="Expiring within 1 hour/expired" class="fa fa-clock-o pull-right" style="font-size:16pt; color:#ef8200;"></i></li>
+                <li class="list-group-item panel-timer">> 1 hour until expires<i title="More than 1 hour until expires" class="fa fa-clock-o pull-right" style="font-size:16pt; color:#333333;"></i></li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-automationid ="newOrdersContentPanel" class="col-md-9 col-lg-9 nopadding-xs">
+
+        <h2>
+            New Orders
+            <span class="fa fa-question-circle title-help-icon"
+                    title="If you are unable to accept the order with the current conditions, you may decline the order and..."
+                    data-help-topic="Accept/Decline Orders"
+                    data-help-text="If you are unable to accept the order with the current conditions, you may decline the order and note a revised fee or due date that are acceptable.&lt;br/&gt;&lt;br/&gt;If the order is not accepted by another partner, you may be contacted to complete the order with the revised conditions.">
+            </span>
+        </h2>
+
+        <form action="/Vendor/AppraiserQueue/SearchNewOrders" id="frmSearch" method="post">    <div data-automationid="newOrder" class="panel panel-default">
+        <div data-automationid="newOrderSearchHeader" class="panel-heading">
+            <span data-toggle="collapse" data-parent="#accordion" href="#collapsibleCriteriaPanel">
+                Search <span class="fa fa-search"></span>
+            </span>
+
+            <div id="collapsibleCriteriaSummaryView" class="inline-nopadding"></div>
+
+            <a data-toggle="collapse" data-parent="#accordion" href="#collapsibleCriteriaPanel">
+                <span data-automationid="newOrderSearchExpander" class="fa fa-chevron-down flip pull-right"></span>
+            </a>
+        </div>
+        <div id="collapsibleCriteriaPanel" class="panel-collapse collapse smallpanelheading">
+            <div class="form form-horizontal" role="form">
+                <div class="form-group">
+                    <div class="col-md-5">
+                        <label class="control-label" for="AssignmentType">Type</label>
+                        <select class="form-control" data-val="true" data-val-number="The field Type must be a number." data-val-required="The Type field is required." id="AssignmentType" name="AssignmentType"><option selected="selected" value="0">Opportunities &amp; Assignments</option>
+<option value="1">Opportunity</option>
+<option value="2">Assignment</option>
+</select>
+                    </div>
+                    <div class="col-md-3">
+                        <label class="control-label" for="Zip">Zip</label>
+                        <input class="form-control" id="Zip" name="Zip" type="text" value="" />
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12">
+                        <div class="checkbox">
+                            <label class="control-label">
+                                <input data-val="true" data-val-required="The Hide Disaster Inspections field is required." id="HideDisasterInspections" name="HideDisasterInspections" type="checkbox" value="true" /><input name="HideDisasterInspections" type="hidden" value="false" /> <label for="HideDisasterInspections">Hide Disaster Inspections</label>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-12 col-xs-12 nopadding">
+                        <div class="col-md-2 col-xs-12 pull-right">
+                            <button id="btnSearch" class="btn btn-primary btn-block buttonstack">Search</button>
+                        </div>
+                        <div class="col-md-2 col-xs-12 pull-right">
+                            <button id="btnReset" class="btn btn-primary btn-block">Reset</button>
+                        </div>
+                    </div>
+                    <input data-val="true" data-val-number="The field MaxRow must be a number." data-val-range="Maximum number of rows must be greater than or equal to one." data-val-range-max="2147483647" data-val-range-min="1" data-val-required="Maximum number of rows is required." id="MaxRow" name="MaxRow" type="hidden" value="100" />
+                    <input data-val="true" data-val-number="The field StartRow must be a number." data-val-range="Starting row number must be greater than zero." data-val-range-max="2147483647" data-val-range-min="1" data-val-required="Starting row number is required." id="StartRow" name="StartRow" type="hidden" value="1" />
+                </div>
+                <div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
+</ul></div>
+            </div>
+        </div>
+    </div>
+</form>
+        
+        
+<div data-val-paging>
+        Showing 1 -
+1        of 1
+            result
+        <br/>
+    
+    <input type="hidden" name="TotalRows" value="1" />
+</div>
+
+        <div data-automationid="newOrderSearchResults" id="divSearchResults" class="container-fluid noleftpadding nopadding-xs">
+
+
+
+    <div id="61238118" data-order-detail-id="61238118" class="panel panel-default">
+        <div class="panel panel-heading smallpanelheading">
+            <div class="row">
+                <div class="col-xs-12 col-md-2 col-lg-2">
+                </div>
+                <div id="61238118-OrderDetailId" class="col-xs-12 col-md-2 col-lg-2">
+                    <label data-automationid="newOrderDetailId" class="control-label queuelabel">
+                        61238118
+                    </label>
+                </div>
+                <div id="61238118-ProductTypeName" class="col-xs-12 col-md-4 col-lg-4">
+                    <label data-automationid="newOrderProductTypeName" class="control-label queuelabel">
+                        1004 Single Family Full
+                    </label>
+                </div>
+                <div id="61238118-TransactionTypeName" class="col-xs-12 col-md-2 col-lg-2">
+                    <label data-automationid="newOrderTransactionTypeName" class="control-label queuelabel">
+                        Refinance
+                    </label>
+                </div>
+                <span data-automationid="newOrderType" class="col-md-2 col-lg-2">
+                    Opportunity
+                </span>
+            </div>
+        </div>
+
+        <div class="panel panel-body nopadding">
+            <div class="col-md-9 col-lg-9 nopadding">
+                <div id="61238118-DueDate" class="col-md-6 col-lg-6 duedate">
+                    <label class="control-label">Due Date:</label>&nbsp;December 30 at 4:53 PM MST
+                </div>
+                <div id="61238118-ClientLoanNumber" class="col-md-4 col-lg-4">
+                    <label class="control-label">Loan:</label>&nbsp;3350147671
+                </div>
+                <div id="61238118-InitialAppraiserFee" class="col-md-2 col-lg-2 nopadding-md">
+                        <label class="control-label">Fee:</label>&nbsp;$350.00
+                </div>
+                <div id="61238118-StreetAddress1" class="col-md-6 col-lg-6">
+                    <label class="control-label">Address:</label>&nbsp;5766 Monte Verde Dr
+                </div>
+                <div id="61238118-City" class="col-md-6 col-lg-6">
+                    <label class="control-label">City:</label>&nbsp;Morgan
+                </div>
+                <div id="61238118-CountyName" class="col-md-6 col-lg-6">
+                    <label class="control-label">County:</label>&nbsp;Morgan
+                </div>
+                <div id="61238118-StateCode" class="col-md-2 col-lg-2">
+                    <label class="control-label">State:</label>&nbsp;UT
+                </div>
+                <div id="61238118-Zip" class="col-md-2 col-lg-2">
+                    <label class="control-label">Zip:</label>&nbsp;84050
+                </div>
+                <div id="61238118-ClientName" class="col-md-12 col-lg-12">
+                    <label class="control-label">Client:</label>&nbsp;Quicken Loans, Inc.
+                </div>
+                <div id="61238118-AssignedDate" class="col-md-6 col-lg-6">
+                    <label class="control-label">Assigned Date:</label>&nbsp;December 22 at 4:53 PM MST
+                </div>
+            </div>
+
+                    <div class="col-md-3 col-lg-3">
+
+                        <button id="61238118-ViewEngagementLetterCommand"
+                                class="btn btn-primary btn-sm btn-block"
+                                data-order-detail-id="61238118"
+                                onclick="window.open('../../AppraiserQueue/EngagementLetter?orderDetailId=61238118', '_blank')">
+                            Engagement Letter
+                        </button>
+
+                        <button id="61238118-114734-AcceptCommand"
+                                class="open-AcceptOrderDialog btn btn-primary btn-sm btn-block"
+                                data-id="61238118"
+                                data-order-detail-id="61238118"
+                                data-isdirectassignment="False"
+                                data-vendorinstructions=""
+                                data-vendorid="114734"
+                                data-engagement-letter-path="../../AppraiserQueue/EngagementLetter?orderDetailId=61238118">
+                            Accept
+                        </button>
+
+                        <button id="61238118-114734-DeclineCommand"
+                                class="open-DeclineOrderDialog btn btn-primary btn-sm btn-block"
+                                data-id="61238118"
+                                data-order-detail-id="61238118"
+                                data-isdirectassignment="False"
+                                data-vendorid="114734">
+                            Decline
+                        </button>
+
+
+                        <span id="61238118-114734-ProcessingNotification"
+                              class="col-md-12 col-lg-12 col-sm-12 new-assignments-single-vendor-action-unavailable nopadding">
+                        </span>
+                    </div>
+
+        </div>
+    </div>
+        </div>
+
+        
+<div data-val-paging>
+        Showing 1 -
+1        of 1
+            result
+        <br/>
+    
+    <input type="hidden" name="TotalRows" value="1" />
+</div>
+    </div>
+    
+    <div class="modal fade" id="declineModal" tabindex="-1" role="dialog" aria-labelledby="declineModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+<form action="/Vendor/AppraisalDetail/DeclineOpportunity" id="frmDeclineOpportunity" method="post">                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h4 class="modal-title">Decline Assignment/Opportunity</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-horizontal" role="form">
+                            <div class="form-group" id="divDeclineOrderDetailId">
+                                <label class="control-label col-md-2" for="DeclineAssignmentModel_OrderDetailId">Order #:</label>
+                                <div class="col-md-10">
+                                    <input class="form-control" data-val="true" data-val-number="The field OrderDetailId must be a number." data-val-required="The OrderDetailId field is required." disabled="disabled" id="DeclineAssignmentModel_OrderDetailId" name="DeclineAssignmentModel.OrderDetailId" type="text" value="0" />
+                                </div>
+                            </div>
+                            <div class="form-group" id="divDeclineReasons">
+                                <label class="control-label col-md-2" for="DeclineAssignmentModel_StatusReasonCode">Reason:</label>
+                                <div class="col-md-10">
+                                    <select class="form-control" data-val="true" data-val-required="The Reason field is required." id="ddlReasonCode" name="DeclineAssignmentModel.StatusReasonCode">
+  <option value="">Select One</option>
+  <option value="FEE" data-has-trip-fee="true" data-prompt-for-date="false">Fee - Appraisal Fee</option>
+  <option value="TURNTIME" data-has-trip-fee="false" data-prompt-for-date="true">Cannot meet due date</option>
+  <option value="CONFLICTOFINTER" data-has-trip-fee="false" data-prompt-for-date="false">Conflict of interest</option>
+  <option value="NOTCMPLTPRODTYPE" data-has-trip-fee="false" data-prompt-for-date="false">Do not complete this product type</option>
+  <option value="FAMEMERGENCY" data-has-trip-fee="false" data-prompt-for-date="false">Family emergency</option>
+  <option value="ILLVACATION" data-has-trip-fee="false" data-prompt-for-date="false">Illness/vacation</option>
+  <option value="WITHCONDITIONS" data-has-trip-fee="true" data-prompt-for-date="false">Fee - Complexity</option>
+  <option value="NOTCOMPETENT" data-has-trip-fee="false" data-prompt-for-date="false">Not competent to complete</option>
+  <option value="OUTSIDEOFMARKET" data-has-trip-fee="false" data-prompt-for-date="false">Outside of coverage area</option>
+  <option value="WRONGPRODTYPE" data-has-trip-fee="false" data-prompt-for-date="false">Product type incorrect</option>
+  <option value="OTHER" data-has-trip-fee="false" data-prompt-for-date="false">Technical issues</option>
+  <option value="WEATHER" data-has-trip-fee="false" data-prompt-for-date="false">Weather</option>
+  <option value="WORKLOAD" data-has-trip-fee="false" data-prompt-for-date="false">Workload</option>
+</select>
+                                </div>
+                            </div>
+                            <div class="form-group not-displayed" id="divAcceptableFeeAmount">
+                                <label class="control-label col-md-8" for="DeclineAssignmentModel_VendorProposedFee">Acceptable Fee Amount:</label>
+                                <div class="col-md-4">
+                                    <div class="currency-input-float-container">
+                                        <span class="currency-input-icon">$</span>
+                                        <input class="form-control" data-val="true" data-val-number="The field Acceptable Fee Amount must be a number." data-val-requiredifany="Please provide the fee with which you would be willing to accept this assignment/opportunity." data-val-requiredifany-otherpropertyname="StatusReasonCode" data-val-requiredifany-otherpropertyvalues="FEE|WITHCONDITIONS" id="txtAcceptableFeeAmount" name="DeclineAssignmentModel.VendorProposedFee" type="text" value="" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group not-displayed" id="divTurnTimeDate">
+                                <label class="control-label col-md-8" for="DeclineAssignmentModel_VendorProposedTurnTime">Proposed Due Date:</label>
+                                <div class="col-md-4">
+                                    <input class="form-control" data-val="true" data-val-date="The field Proposed Due Date must be a date." data-val-minimumdate="Proposed Due Date cannot be earlier than today&#39;s date." data-val-minimumdate-minimumdatevalue="12/22/2015 00:00:00" data-val-requiredifany="Please provide a Proposed Due Date for this assignment/opportunity." data-val-requiredifany-otherpropertyname="StatusReasonCode" data-val-requiredifany-otherpropertyvalues="TURNTIME" id="txtTurnTimeDate" name="DeclineAssignmentModel.VendorProposedTurnTime" type="text" value="" />
+                                </div>
+                            </div>
+                            <div class="form-group" id="divDeclineComments">
+                                <label class="control-label col-md-2" for="DeclineAssignmentModel_VendorResponse">Notes:</label>
+                                <div class="col-md-12">
+                                    <textarea class="col-md-12 col-sm-12 col-xs-12" cols="20" data-val="true" data-val-requiredifany="The Notes field is required." data-val-requiredifany-otherpropertyname="StatusReasonCode" data-val-requiredifany-otherpropertyvalues="WRONGPRODTYPE" id="txtComments" name="DeclineAssignmentModel.VendorResponse" placeholder="Tell us why you are declining this assignment/opportunity." rows="5">
+</textarea>
+                                </div>
+                            </div>
+                            <div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
+</ul></div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" id="btnDeclineModalCancel" class="btn btn-default">Cancel</button>
+                        <button type="button" id="btnDecline" class="btn btn-primary" data-loading-text="Updating...">Decline</button>
+                    </div>
+</form>            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" id="acceptModal" tabindex="-1" role="dialog" aria-labelledby="acceptModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4 class="modal-title">Confirm Assignment</h4>
+                </div>
+                <span id="specialInstructionsForAccept" class="col-md-12 alert alert-warning not-displayed">
+                    <span class="fa fa-exclamation-circle"></span>
+                    <strong>SPECIAL INSTRUCTIONS: </strong>
+                    <label id="lblVendorInstructions"></label>
+                </span>
+                <div class="modal-engagement clearfix">
+                    <div class="form-horizontal">
+                        <label class="control-label">
+                            Please review the Engagement Letter
+                        </label>
+                        <button class="btn btn-primary btn-md pull-right" id="btnViewEngagementLetterModal" data-view-engagement-letter>View Enagement Letter</button>
+                    </div>
+                </div>
+                <div class="modal-acceptance">
+                    <div class="col-xs-1 modal-alerticon">
+                        <span class="fa fa-exclamation-circle"></span>
+                    </div>
+                    <div class="modal-alerttext">
+                        By clicking Accept Order, I am confirming that I have read and accept the terms and conditions of the engagement letter for this assignment.
+                    </div>
+                </div>
+                <div class="modal-footer nomargin modal-acceptfooter">
+                    <button type="button" id="btnCancel" name="btnCancel" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button type="button" id="btnAccept" name="btnAccept" class="btn btn-primary" data-loading-text="Updating...">Accept Order</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+</div>
+
+
+    </div>
+
+    <footer class="fluid-container footer">
+    <div class="container">
+        <div class="footer-main col-sm-12">
+            <div class="footer-main-links col-md-offset-1 col-md-10 text-center">
+                <a href="http://www.titlesource.com/Solutions" target="_blank">Title Source Services</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="/Account/SecurityAndPrivacy" target="_blank">Security and Privacy</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="/Account/EmailTermsAndConditions" target="_blank">E-mail Terms and Conditions</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="/ContactUs" target="_blank">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="http://www.titlesourcecareers.com" target="_blank">Careers</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="/AmcRegistration/StateCodes" target="_blank">AMC Registration Numbers</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="/Account/TermsOfUse" target="_blank">Terms of Use</a>
+            </div>
+            <div class="footer-legal col-sm-6 text-center">
+                <p>
+                    Services provided by Title Source, Inc.<br />
+                    © 2000 - 2015 Title Source, Inc. All Rights Reserved.<br />
+                    Title Source is a service mark of Title Source, Inc.<br />
+                </p>
+            </div>
+            <div class="footer-social col-sm-6">
+                <div class="social-button">
+                    <a target="_blank" href="http://www.facebook.com/titlesource.social">
+                        <img class="social-img" src="/Content/Images/f_logo.png" /><br />
+                        Facebook
+                    </a>
+                </div>
+                <div class="social-button">
+                    <a target="_blank" href="http://www.twitter.com/titlesource">
+                        <img class="social-img" src="/Content/Images/sm-twitter.png" /><br />
+                        Twitter
+                    </a>
+                </div>
+                <div class="social-button">
+                    <a target="_blank" href="http://www.linkedin.com/company/title-source-inc.">
+                        <img class="social-img" src="/Content/Images/linkedin.png" /><br />
+                        Linkedin
+                    </a>
+                </div>
+                <div class="social-button">
+                    <a target="_blank" href="http://www.titlesource.com/blog">
+                        <img class="social-img" src="/Content/Images/blog.png" /><br />
+                        Blog
+                    </a>
+                </div>
+                <div class="social-button">
+                    <a target="_blank" href="http://www.titlesource.com/about/subscribe">
+                        <img class="social-img" src="/Content/Images/e-mail-icon.png" /><br />
+                        Newsletter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <div class="modal fade" id="divLoadingModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <span class="fa fa-spinner fa-pulse"></span> Loading...
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+    <!-- Modal for general alerts which require an "OK" button click. -->
+<div class="modal fade" id="alertModal" tabindex="-1" role="dialog" aria-labelledby="alertModalLabel" aria-hidden="true" data-automationid="alertContainer">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" data-automationid="close" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" data-modal-title></h4>
+            </div>
+            <div class="modal-body" data-modal-body></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" data-automationid="ok" data-ok-button>OK</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+    <!-- Modal for confirming intent. -->
+<div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="confirmModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" data-confirm>Confirm</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+    <script src="/bundles/jquery?v=R0KiZzyTGcRkWU5_1Fc-5mqOIaCWgKiycX2qulMVvfY1"></script>
+
+    <script src="/bundles/jqueryval?v=sTM6z75i3uDpVeh__Zai1IpnDnqY9pO-TNy0Ztaw6Y81"></script>
+
+    <script src="/bundles/bootstrap?v=OfX192nbUgK5NE8ftV4Ef6ToCtjUTli3wC5jn344bfM1"></script>
+
+    <script src="/bundles/tsiScripts?v=c9-ZOi_iPQWuLYYhiZVpcKGmpUisjQwadBXIVDDOnXM1"></script>
+
+    
+    <script src="/Areas/Vendor/Scripts/vendorModule.js"></script>
+
+
+    <script type="text/javascript">
+        /*jslint browser:true, white:true */
+        /*global $, vendorModule */
+        var vendor;
+
+        $(document).ready(function () {
+            'use strict';
+
+            vendor = vendorModule.init(
+                $('#divLoadingModal'),
+                $('#confirmModal')
+            );
+        });
+    </script>
+
+
+
+    
+    <script src="/Areas/Vendor/Scripts/NewOrdersQueue.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            'use strict';
+            var
+                stateTracker = tsiStateTracker.init(
+                    vendor.common, /* Initialized in layout. */
+                    'AppraiserQueue',
+                    function () {
+                        newOrdersQueue.updateQueueState(stateTracker);
+                    }
+                ),
+                pager = tsiPager.init(
+                    $('[name="StartRow"]'),
+                    $('[name="MaxRow"]'),
+                    $('[name="TotalRows"]')
+                );
+
+            /* Initialize Javascript module for New Assignments queue. */
+            newOrdersQueue.init(
+                vendor, /* Initialized in layout. */
+                stateTracker,
+                pager,
+                $('#divLoadingModal'),
+                [{"Key":"FEE","Value":"Fee - Appraisal Fee","ReasonQuestion":"Please provide the fee you would accept for this order in the box labeled \"Acceptable Fee Amount\". Leave any additional comments here:","HasTripFee":true,"IsTextRequired":false,"PromptForDate":false},{"Key":"TURNTIME","Value":"Cannot meet due date","ReasonQuestion":"If we were to extend the turn time, please provide the date when you would be able to deliver the report:","HasTripFee":false,"IsTextRequired":false,"PromptForDate":true},{"Key":"CONFLICTOFINTER","Value":"Conflict of interest","ReasonQuestion":"","HasTripFee":false,"IsTextRequired":false,"PromptForDate":false},{"Key":"NOTCMPLTPRODTYPE","Value":"Do not complete this product type","ReasonQuestion":"","HasTripFee":false,"IsTextRequired":false,"PromptForDate":false},{"Key":"FAMEMERGENCY","Value":"Family emergency","ReasonQuestion":"","HasTripFee":false,"IsTextRequired":false,"PromptForDate":false},{"Key":"ILLVACATION","Value":"Illness/vacation","ReasonQuestion":"","HasTripFee":false,"IsTextRequired":false,"PromptForDate":false},{"Key":"WITHCONDITIONS","Value":"Fee - Complexity","ReasonQuestion":"Please provide the fee you would accept for this order in the box labeled \"Acceptable Fee Amount\". Leave any additional comments here:","HasTripFee":true,"IsTextRequired":false,"PromptForDate":false},{"Key":"NOTCOMPETENT","Value":"Not competent to complete","ReasonQuestion":"","HasTripFee":false,"IsTextRequired":false,"PromptForDate":false},{"Key":"OUTSIDEOFMARKET","Value":"Outside of coverage area","ReasonQuestion":"","HasTripFee":false,"IsTextRequired":false,"PromptForDate":false},{"Key":"WRONGPRODTYPE","Value":"Product type incorrect","ReasonQuestion":"Please provide the correct product type for this order:","HasTripFee":false,"IsTextRequired":true,"PromptForDate":false},{"Key":"OTHER","Value":"Technical issues","ReasonQuestion":"","HasTripFee":false,"IsTextRequired":false,"PromptForDate":false},{"Key":"WEATHER","Value":"Weather","ReasonQuestion":"","HasTripFee":false,"IsTextRequired":false,"PromptForDate":false},{"Key":"WORKLOAD","Value":"Workload","ReasonQuestion":"","HasTripFee":false,"IsTextRequired":false,"PromptForDate":false}],
+                $('#frmSearch'),
+                $('#collapsibleCriteriaPanel'),
+                $('#collapsibleCriteriaSummaryView'),
+                $('#btnSearch'),
+                $('#btnReset'),
+                $('#divSearchResults'),
+                $('div[data-val-paging]'),
+                '.open-AcceptOrderDialog',
+                '.open-DeclineOrderDialog',
+                $('#acceptModal'),
+                $('#btnAccept'),
+                $('#declineModal'),
+                $('#ddlReasonCode'),
+                $('#txtComments'),
+                $('#divAcceptableFeeAmount'),
+                $('#txtAcceptableFeeAmount'),
+                $('#divTurnTimeDate'),
+                $('#txtTurnTimeDate'),
+                $('#btnDecline'),
+                $('#btnDeclineModalCancel'),
+                {
+                    'order-no-longer-available': 'Oops! It looks like this order is no longer available. The queue will be refreshed to get the latest assignments.',
+                    'request-for-declining-reason': 'Please tell us why you are declining this assignment/opportunity.'
+                }
+            );
+        });
+    </script>
+
+    
+</body>
+</html>

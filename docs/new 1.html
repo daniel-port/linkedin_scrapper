@@ -1,0 +1,47 @@
+   var scriptTmpl = @"(function() {         
+                                     var result = '';
+                                     var contactName = '';
+                                     var title = '';
+                                     var curWork='';
+                                     var passWork= '';
+                                     var education = '';
+                                     var email = '';
+                                     var linkedin = '';
+                                     var location = '';          
+                     
+                                      try { contactName =  document.getElementById('name').getElementsByClassName('full-name')[0].innerText; } catch(err){ }
+                                      try { title = document.getElementById('headline').getElementsByTagName('p')[0].innerText; } catch(err){ }
+                                      try { curWork = document.getElementById('overview-summary-current').getElementsByTagName('a')[2].innerText; } catch(err){ };
+                                      try { passWork = document.getElementById('overview-summary-past').getElementsByTagName('a')[2].innerText; } catch(err){ }     
+                                      try { education = document.getElementById('overview-summary-education').getElementsByTagName('a')[2].innerText; } catch(err){ }
+                                      try { email = document.getElementById('email-view').getElementsByTagName('a')[0].innerText } catch(err){ };
+                                      try { linkedin = document.getElementsByClassName('view-public-profile')[0].innerText; } catch(err){ }
+                                      try { location = document.getElementById('location').getElementsByTagName('a')[0].innerText; } catch(err){ }
+                                   
+                                     
+                                     var skillString = '';  
+                                       try { 
+                                            var skillsTags = document.getElementsByClassName('endorse-item-name-text');
+                                             for (i = 0; i < skillsTags.length; i++) {
+                                                 skillString += skillsTags[i].innerText;
+                                                if(i <  skillsTags.length -1)
+                                                  skillString += ', '; 
+                                              } 
+                                       catch(err){}  
+
+                                      var contactsString = '';   
+                                       try
+                                        {
+                                         var contacts = document.getElementsByClassName('connections-name');
+                                         for (i = 0; i < contacts.length; i++) {
+                                             contactsString += contacts[i].innerText;
+                                            if(i <  contactsString.length -1)
+                                              contactsString += ', '; 
+                                          } 
+                                       } 
+                                       catch(err){}
+                             
+                                    result = { 'Name': contactName, 'Email':email, 'CurrentWork':curWork, 'PreviousWork':passWork, 'Education':education, 'Location':location, 'Linkedin':linkedin, 'Skills': skillString, 'Contacts':contactsString } 
+
+                                    return JSON.stringify(result);
+                                })();";

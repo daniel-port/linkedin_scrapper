@@ -1,0 +1,458 @@
+
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<meta name="msapplication-TileColor" content="#FFFFFF" />
+<meta name="msapplication-square70x70logo" content="http://www.mytitlesourceconnection.com:80/smalltile.png" />
+<meta name="msapplication-square150x150logo" content="http://www.mytitlesourceconnection.com:80/mediumtile.png" />
+<meta name="msapplication-wide310x150logo" content="http://www.mytitlesourceconnection.com:80/widetile.png" />
+<meta name="msapplication-square310x310logo" content="http://www.mytitlesourceconnection.com:80/largetile.png" />
+
+<title>Blue Moon - Vendor Portal</title>
+
+<link href="/Content/mainsitebundle?v=zI6pqqXjaTwsYcLMAO2RzB5T_65YEHw3RI10JA7Lj3o1" rel="stylesheet"/>
+
+        
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-768683-7', 'auto');
+    ga('send', 'pageview');
+</script>
+
+<link rel="icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+<link rel="icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+<link rel="icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+<link rel="icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    </head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top navbar-titlesource fluid-container nopadding">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand titlesourcelogo hidden-sm hidden-md hidden-lg" href="/Vendor/Appraiser"> </a>
+        </div>
+
+        <div class="container">
+            
+
+
+<a class="navbar-brand titlesourcelogo hidden-xs" href="/Vendor/Appraiser"> </a>
+    <ul class="nav navbar-nav navbar-right">
+        <li>
+            <!-- TODO: Portal - this should take us to a password reset screen -->
+<a href="/Vendor/Profile/Summary" title="Manage">Hello Dax Gurr!</a>        </li>
+        <li>
+<form action="/Account/LogOff" class="navbar-right" id="logoutForm" method="post"><input name="__RequestVerificationToken" type="hidden" value="182aWzsm5zVyatVnKtLkEr2dWI77OC2EWxSHAMcOUvBMIcBrJY1MMZ_18FfEaXnucL9heS2EeSn2ZPsTg3TAeI34oNYUGTL_ak-hOrYq_zyJxSbeW1wdoqjuueRQbmrg8uni8w2" /></form>            <a href="javascript:document.getElementById('logoutForm').submit()" class="navbar-login" data-automationid="LogOff">Log off</a>
+        </li>
+    </ul>
+
+    
+
+            
+
+        </div>
+
+        
+
+
+    <div class="navbar-collapse collapse">
+    <div data-automationid="mainNavigationBar" class="navbar-inner col-sm-12 navbar-topmenu"><div class="navbar-topmenu container"><ul id="topMenu" class="nav navbar-nav">
+                
+                <li><a href="/Vendor/Appraiser" id="Dashboard">Dashboard</a></li>
+                
+                <li class="divider-vertical"></li>
+                
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" id="Queues">Queues <b class="caret"></b></a>    <ul class="dropdown-menu" id ="Queues">
+                
+                <li><a href="/Vendor/AppraiserQueue/NewOrders" id="NewOrders">New Orders</a></li>
+                
+                <li><a href="/Vendor/AppraiserQueue/InProgress" id="InProgress">In Progress</a></li>
+                
+                <li><a href="/Vendor/AppraiserQueue/ReportNotAcceptable" id="ReportNotAcceptable">Report Not Acceptable</a></li>
+                
+                <li><a href="/Vendor/AppraiserQueue/CancelPending" id="CancelPending">Cancel Pending</a></li>
+                
+                <li><a href="/Vendor/AppraiserQueue/Completed" id="Completed">Completed</a></li>
+    </ul>
+</li>
+                
+                <li class="divider-vertical"></li>
+                
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#" id="Profile">Profile <b class="caret"></b></a>    <ul class="dropdown-menu" id ="Profile">
+                
+                <li><a href="/Vendor/Profile/Summary" id="Summary">Summary</a></li>
+                
+                <li><a href="/Vendor/Profile/Availability" id="Availability">Availability</a></li>
+                
+                <li><a href="/Vendor/Profile/Documents" id="Documents">Documents</a></li>
+                
+                <li><a href="/Vendor/Profile/ServiceAreas" id="ServiceAreas">Service Areas</a></li>
+                
+                <li><a href="/Vendor/Profile/Performance" id="Performance">Performance</a></li>
+                
+                <li><a href="/Account/ChangePassword" id="ChangePassword">Change Password</a></li>
+    </ul>
+</li>
+                
+                <li class="divider-vertical"></li>
+                
+                <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="/Vendor/Help" id="Help">Help <b class="caret"></b></a>    <ul class="dropdown-menu" id ="Help">
+                
+                <li><a href="/Vendor/Help/TrainingVideoForLogin" id="TrainingVideos-LoggingIn">Training Videos - Logging In</a></li>
+                
+                <li><a href="/Vendor/Help/TrainingVideoForDashboard" id="TrainingVideos-TheDashboard(HomeScreen)">Training Videos - The Dashboard (Home Screen)</a></li>
+                
+                <li><a href="/Vendor/Help/TrainingVideoForFeatures" id="TrainingVideos-Features">Training Videos - Features</a></li>
+                
+                <li><a href="/Vendor/Help/UserGuide" id="UserGuide">User Guide</a></li>
+    </ul>
+</li>
+            </ul></div></div></div>
+
+
+    </div>
+
+    <div data-automationid="commonBodyContainer" class="container body-content grey-container">
+        
+
+
+
+        
+
+
+
+
+<div class="container-fluid nopadding">
+    <div class="validation-summary-valid" data-valmsg-summary="true"><ul><li style="display:none"></li>
+</ul></div>
+
+    <!-- SideBar-->
+    <div data-automationid="queueMenu" class="col-md-3 col-lg-3 nopadding-xs">
+
+        <!-- SideBar Queues -->
+        
+<h2>Queues</h2>
+<div class="list-group">
+    <a href="/Vendor/AppraiserQueue/NewOrders" class=" list-group-item" data-automationid="newOrdersQueueLink">
+        New Orders
+        <span class="badge pull-right" data-queue-count="APPRASSIGNMENTS">1</span>
+    </a>
+    <a href="/Vendor/AppraiserQueue/InProgress" class=" list-group-item" data-automationid="inProgressQueueLink">
+        In Progress
+        <span class="badge pull-right" data-queue-count="APPRINPROGRESS">0</span>
+    </a>
+    <a href="/Vendor/AppraiserQueue/ReportNotAcceptable" class=" list-group-item notacceptable" data-automationid="rnaQueueLink">
+        Report Not Acceptable
+        <span class="badge pull-right" data-queue-count="APPRREPORTNOTACC">0</span>
+    </a>
+    <a href="/Vendor/AppraiserQueue/CancelPending" class=" list-group-item" data-automationid="cancelPendingQueueLink">
+        Cancel Pending
+        <span class="badge pull-right" data-queue-count="APPRCANCELPEND">0</span>
+    </a>
+</div>
+
+<div class="list-group">
+    <a class="list-group-item" href="mailto:MACSupport@tsiappraisal.com?subject=MAC Portal feedback from user 'daxgurr@gmail.com'&body=Username: daxgurr@gmail.com%0D%0A%0D%0AI would like to submit the following feedback/question/concern regarding the MAC Portal:%0D%0A">Submit Feedback</a>
+</div>
+
+            <!-- Capacity Info -->
+            <div>
+                <div class="list-group">
+                    <div class="list-group-item">Max Capacity: <label>10</label></div>
+                    <div class="list-group-item">Total Orders: <label>0</label></div>
+                    <div class="list-group-item">Max Daily Capacity: <label>2</label></div>
+                    <div class="list-group-item">Today's Orders: <label>0</label></div>
+                    <div class="list-group-item">Last Assignment: <label>October 21 at 10:27 AM</label></div>
+                                    </div>
+            </div>
+    </div>
+
+    <div class="col-md-9 nopadding-xs">
+
+        <h2>Dashboard</h2>
+
+        <!-- Expander grouping for Dashboard -->
+
+        <div class="panel-group dashboard-spacer" id="accordion">
+            <!-- Alerts -->
+            <!-- Today's Appointments -->
+            <div class="col-md-12 nopadding">
+                <div class="panel panel-default">
+                    <div class="panel-heading smallpanelheading">
+                        <h4>
+                            <span class="badge pull-left">0</span>
+                            &nbsp;Today's Appointments
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                <span class="fa fa-chevron-up pull-right flip"></span>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse in">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th><span class="fa fa-envelope"></span></th>
+                                    <th>Order</th>
+                                    <th class="hidden-xs">Product Type</th>
+                                    <th>Street Address</th>
+                                    <th>City</th>
+                                    <th class="hidden-xs">Trans Type</th>
+                                    <th class="hidden-xs">Time</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- Messages -->
+            <div class="col-md-12 nopadding">
+                <div class="panel panel-default">
+                    <div class="panel-heading smallpanelheading">
+                        <h4>
+                            <span class="badge pull-left">0</span>
+                            &nbsp;New Messages
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                <span class="fa fa-chevron-up pull-right flip pull-right flip"></span>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse in">
+                                <div class="list-group" id="messages-accordion" role="tablist" aria-multiselectable="false">
+        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Pending Appointments -->
+            <div class="col-md-12 nopadding">
+                <div class="panel panel-default">
+                    <div class="panel-heading smallpanelheading">
+                        <h4>
+                            <span class="badge pull-left">0</span>
+                            &nbsp;Unscheduled Inspections
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                <span class="fa fa-chevron-up pull-right flip flip pull-right"></span>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse in">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th><span class="fa fa-envelope"></span></th>
+                                        <th>Order</th>
+                                        <th class="hidden-xs">Product Type</th>
+                                        <th>Street Address</th>
+                                        <th>City</th>
+                                        <th class="hidden-xs">Trans Type</th>
+                                        <th class="hidden-xs">Due Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Reports Due -->
+            <div class="col-md-12 nopadding">
+                <div class="panel panel-default">
+                    <div class="panel-heading smallpanelheading">
+                        <h4>
+                            <span class="badge pull-left">0</span>
+                            &nbsp;Reports Due
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                <span class="fa fa-chevron-up pull-right flip flip pull-right"></span>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse in">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th><span class="fa fa-envelope"></span></th>
+                                        <th>Order</th>
+                                        <th class="hidden-xs">Product Type</th>
+                                        <th>Street Address</th>
+                                        <th class="hidden-xs">City</th>
+                                        <th class="hidden-xs">Trans Type</th>
+                                        <th>Due Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+    <footer class="fluid-container footer">
+    <div class="container">
+        <div class="footer-main col-sm-12">
+            <div class="footer-main-links col-md-offset-1 col-md-10 text-center">
+                <a href="http://www.titlesource.com/Solutions" target="_blank">Title Source Services</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="/Account/SecurityAndPrivacy" target="_blank">Security and Privacy</a>
+                &nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="/Account/EmailTermsAndConditions" target="_blank">E-mail Terms and Conditions</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="/ContactUs" target="_blank">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="http://www.titlesourcecareers.com" target="_blank">Careers</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="/AmcRegistration/StateCodes" target="_blank">AMC Registration Numbers</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+                <a href="/Account/TermsOfUse" target="_blank">Terms of Use</a>
+            </div>
+            <div class="footer-legal col-sm-6 text-center">
+                <p>
+                    Services provided by Title Source, Inc.<br />
+                    © 2000 - 2015 Title Source, Inc. All Rights Reserved.<br />
+                    Title Source is a service mark of Title Source, Inc.<br />
+                </p>
+            </div>
+            <div class="footer-social col-sm-6">
+                <div class="social-button">
+                    <a target="_blank" href="http://www.facebook.com/titlesource.social">
+                        <img class="social-img" src="/Content/Images/f_logo.png" /><br />
+                        Facebook
+                    </a>
+                </div>
+                <div class="social-button">
+                    <a target="_blank" href="http://www.twitter.com/titlesource">
+                        <img class="social-img" src="/Content/Images/sm-twitter.png" /><br />
+                        Twitter
+                    </a>
+                </div>
+                <div class="social-button">
+                    <a target="_blank" href="http://www.linkedin.com/company/title-source-inc.">
+                        <img class="social-img" src="/Content/Images/linkedin.png" /><br />
+                        Linkedin
+                    </a>
+                </div>
+                <div class="social-button">
+                    <a target="_blank" href="http://www.titlesource.com/blog">
+                        <img class="social-img" src="/Content/Images/blog.png" /><br />
+                        Blog
+                    </a>
+                </div>
+                <div class="social-button">
+                    <a target="_blank" href="http://www.titlesource.com/about/subscribe">
+                        <img class="social-img" src="/Content/Images/e-mail-icon.png" /><br />
+                        Newsletter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <div class="modal fade" id="divLoadingModal" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <span class="fa fa-spinner fa-pulse"></span> Loading...
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+    <!-- Modal for general alerts which require an "OK" button click. -->
+<div class="modal fade" id="alertModal" tabindex="-1" role="dialog" aria-labelledby="alertModalLabel" aria-hidden="true" data-automationid="alertContainer">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" data-automationid="close" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" data-modal-title></h4>
+            </div>
+            <div class="modal-body" data-modal-body></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal" data-automationid="ok" data-ok-button>OK</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+    <!-- Modal for confirming intent. -->
+<div class="modal fade" id="confirmModal" tabindex="-1" role="dialog" aria-labelledby="confirmModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body"></div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-primary" data-confirm>Confirm</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+    <script src="/bundles/jquery?v=R0KiZzyTGcRkWU5_1Fc-5mqOIaCWgKiycX2qulMVvfY1"></script>
+
+    <script src="/bundles/jqueryval?v=sTM6z75i3uDpVeh__Zai1IpnDnqY9pO-TNy0Ztaw6Y81"></script>
+
+    <script src="/bundles/bootstrap?v=OfX192nbUgK5NE8ftV4Ef6ToCtjUTli3wC5jn344bfM1"></script>
+
+    <script src="/bundles/tsiScripts?v=c9-ZOi_iPQWuLYYhiZVpcKGmpUisjQwadBXIVDDOnXM1"></script>
+
+    
+    <script src="/Areas/Vendor/Scripts/vendorModule.js"></script>
+
+
+    <script type="text/javascript">
+        /*jslint browser:true, white:true */
+        /*global $, vendorModule */
+        var vendor;
+
+        $(document).ready(function () {
+            'use strict';
+
+            vendor = vendorModule.init(
+                $('#divLoadingModal'),
+                $('#confirmModal')
+            );
+        });
+    </script>
+
+
+
+    
+    <script src="/Areas/Vendor/scripts/Messages.js"></script>
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            'use strict';
+            messages /* Initialized in Messages.js. */
+                .init(vendor /* Initialized in layout. */);
+        });
+    </script>
+
+    
+</body>
+</html>
